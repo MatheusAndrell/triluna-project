@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Lemonada:wght@300..700&display=swap');
+
+
+:root {
+    /* BACKGROUNDS */
+    --bg-color-primeiro: #2582a5;
+    --bg-color-segundo: #41aed5;
+    --bg-color-terceiro: #D3E5F7;
+
+
+    /* CORES TEXTO */
+    --text-color-primeiro: #2582a5;
+    --text-color-segundo: #41aed5;
+    --text-color-terceiro: #D3E5F7;
+
+
+
+}
+
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    overflow: hidden;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Branco com transparência */
+    backdrop-filter: blur(10px);
+    /* Efeito de desfoque */
+}
+
+.navbar-logo {
+    float: left;
+    margin-left: 5%;
+}
+
+.navbar-logo img {
+    height: 50px;
+}
+
+.navbar-menu {
+    margin-left: 62%;
+}
+
+.navbar-menu ul {
+    list-style-type: none;
+    margin: 0;
+    margin-right: 50px;
+    padding: 0;
+}
+
+.navbar-menu ul li {
+    display: inline;
+    margin-left: 5px;
+}
+
+.navbar-menu ul li a {
+    color: var(--text-color-primeiro);
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.navbar-menu ul li a:hover {
+    color: var(--text-color-segundo);
+}
+
+/* FIM NAV TOP SECTION */
+
+/* CREATIVE SECTION */
+
+.creative-section {
+    width: 100%;
+    height: 40rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.background-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    margin-top: -20px;
+}
+
+
+.creative-section div {
+    margin-left: 5%;
+
+}
+
+.creative-section h1 {
+    font-size: 70px;
+    margin-bottom: 0;
+
+}
+
+.creative-section h2 {
+    margin: 0;
+    font-weight: 100;
+    font-size: 36px;
+    color: #b4b4b4;
+}
+
+.creative-section p {
+    margin-right: 64%;
+}
+
+.button-primary {
+    border: none;
+    padding: 14px 13px 14px 13px;
+    background: linear-gradient(275deg, #A1D9E3, #3A66DA);
+    border-radius: 100px;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 82px;
+    transition: all ease-in-out 0.9s;
+}
+
+.button-primary:hover {
+    background: linear-gradient(275deg, #77a9b1, #2a489a);
+    color: white;
+}
+
+.creative-section a {
+    font-weight: 600;
+    font-size: 16px;
+    color: #585858;
+}
+
+/* FIM DE CREATIVE SECTION */
+
+
+
+/* CATALOGOS SECTION */
+
+.catalogos {
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-6 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.catg {
+    width: 140px;
+    height: 140px;
+    border-radius: 100px;
+    margin-right: 50px;
+}
+
+.catgg {
+    width: 140px;
+    height: 140px;
+    border-radius: 100px;
+}
+
+.bord1 {
+    border: 5px solid rgb(209, 111, 127);
+}
+
+.bord2 {
+    border: 5px solid rgb(56, 56, 173);
+}
+
+.bord3 {
+    border: 5px solid rgb(255, 255, 58);
+}
+
+.bord4 {
+    border: 5px solid rgb(49, 179, 49)
+}
+
+.bord5 {
+    border: 5px solid rgb(127, 39, 127);
+}
+
+.bord6 {
+    border: 5px solid rgb(191, 41, 41);
+}
+
+/* FIM CATALOGOS SECTION */
+
+/* PRODUTOS SECTION */
+
+.produtos {
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.col-4 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.prod {
+    background-color: gray;
+    width: 250px;
+    height: 250px;
+
+}
+
+/* FIM PRODUTOS SECTION */
+
+
+/* FORM PAG */
+
+.form-pag {
+    width: 100%;
+    height: 54rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-pag img {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.form-pag div {
+    margin-left: 50%;
+}
+
+.form-pag h1 {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.form-pag p {
+    color: white;
+    margin-right: 20%;
+}
+
+
+/* FIM FORM PAG */
+
+/* ABOUT-US */
+
+
+.about-us {
+    width: 100%;
+    height: 60rem;
+    background-image: url('../img/about-us.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.about-us-container {
+    align-items: center;
+    justify-content: center;
+    margin-left: 45%;
+    margin-top: 8%;
+}
+
+.about-us-container button {
+    margin-left: 40%;
+    margin-top: 5%;
+}
+
+.about-us h1 {
+    color: #b4b4b4;
+    font-size: 90px;
+    margin-bottom: 0px;
+    margin: 0;
+}
+
+.about-us-text {
+    margin-top: 11%;
+    margin-left: 25%;
+}
+
+.about-us div p {
+    text-align: justify;
+    color: #585858;
+    margin-right: 52%;
+}
+
+.redes-about {
+    display: flex;
+    width: 100%;
+    margin-left: 20%;
+    margin-top: 18%;
+}
+
+.redes-about i {
+    font-size: 23px;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+
+.redes-about i:hover {
+    color: var(--text-color-primeiro);
+}
+
+.insta {
+    margin-right: 10px;
+}
+
+/* FIM ABOUT-US */
+
+/* -------------- PAGE PRODUCTION --------------- */
+
+/* PRODUCT SECTION  */
+
+.product-section {
+    height: 39rem;
+    display: flex;
+}
+
+.product-container {
+    width: 100%;
+    margin-top: 10%;
+    display: flex;
+}
+
+.product-image-container {
+    height: 85%;
+    width: 35%;
+    margin-left: 20%;
+}
+
+.product-image {
+    width: 75%;
+    height: 71%;
+    background-color: var(--bg-color-primeiro);
+    border-radius: 36px;
+    margin-left: 13%;
+}
+
+.more-image {
+    display: flex;
+    margin-top: 28px;
+    width: 100%;
+    height: 15%;
+    justify-content: space-evenly;
+}
+
+.more-image div {
+    background-color: var(--bg-color-primeiro);
+    width: 15%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+.info-product h2 {
+    color: var(--text-color-primeiro);
+    font-size: 15px;
+}
+
+.info-product h1 {
+    font-size: 34px;
+    margin: 0;
+}
+
+.info-product p {
+    margin-right: 50%;
+    font-size: 15px;
+}
+
+.payment-product {}
+
+.price-and-discount {
+    display: flex;
+    align-items: center;
+}
+
+.payment-product h2,
+.payment-product p,
+.desconto h1 {
+    margin: 0;
+}
+
+.desconto {
+    margin-left: 47px;
+    font-size: 10px;
+    padding: 7px;
+    color: #4bbadd;
+    background: #dadada8c;
+    border-radius: 7px;
+}
+
+.payment-product h2 {}
+
+.payment-product p {
+    font-size: 14px;
+    color: #c0bebe;
+    text-decoration: line-through;
+}
+
+.desconto h1 {}
+
+.button-product {
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.quanty {
+    text-align: center;
+    width: 17px;
+    margin: 0 10px;
+    padding: 8px;
+    font-size: 15px;
+    background: none;
+    border: none;
+    font-weight: 600;
+}
+
+.quanty-btn {
+    padding: 5px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f2f2f2;
+    border: none;
+    transition: background-color 0.3s;
+    color: var(--text-color-segundo);
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.decrease {
+    border-radius: 10px 0px 0px 10px;
+}
+
+.increase {
+    border-radius: 0px 10px 10px 0px;
+}
+
+.quanty-btn:hover {
+    background-color: #e9e9e9;
+}
+
+.button-quanty {
+    border-radius: 10px;
+    background-color: #d0d0d047;
+}
+
+.ml {
+    margin-left: 50px;
+    border-radius: 10px !important;
+}
+
+.shopp {
+    margin-right: 10px;
+}
+
+/* FIM PRODUCT SECTION  */
