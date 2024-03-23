@@ -18,10 +18,10 @@
         </div>
         <div class="navbar-menu">
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Produtos</a></li>
-                <li><a href="#forma">Formas de Pagamento</a></li>
-                <li><a href="#about">Sobre Nós</a></li>
+                <li><a href="/#services">Home</a></li>
+                <li><a href="/#catalogo">Produtos</a></li>
+                <li><a href="/#forma">Formas de Pagamento</a></li>
+                <li><a href="/#about">Sobre Nós</a></li>
             </ul>
         </div>
     </div>

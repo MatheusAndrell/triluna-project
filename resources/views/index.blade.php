@@ -18,8 +18,8 @@
         </div>
         <div class="navbar-menu">
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Produtos</a></li>
+                <li><a href="#services">Home</a></li>
+                <li><a href="#catalogo">Produtos</a></li>
                 <li><a href="#forma">Formas de Pagamento</a></li>
                 <li><a href="#about">Sobre Nós</a></li>
             </ul>
@@ -38,7 +38,7 @@
         </div>
     </section>
 
-    <section class="catalogos">
+    <section class="catalogos" id="catalogo">
         <div class="col-6">
             <div class="catg bord1"></div>
             <div class="catg bord2"></div>
@@ -48,7 +48,7 @@
             <div class="catgg bord6"></div>
         </div>
     </section>
-    <section class="produtos">
+    <section class="produtos" id="produtos">
         <div class="col-4">
             <div class="prod"></div>
             <div class="prod"></div>
