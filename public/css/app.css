@@ -170,6 +170,7 @@ html {
     height: 140px;
     border-radius: 100px;
     margin-right: 50px;
+    background-size: cover;
 }
 
 .catgg {
@@ -222,10 +223,23 @@ html {
 }
 
 .prod {
-    background-color: gray;
+    background-color: #c7c2c24a;
     width: 250px;
     height: 250px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 
+.prod p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 36px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-weight: 800;
+    color: var(--bg-color-segundo);
 }
 
 /* FIM PRODUTOS SECTION */
@@ -316,8 +330,8 @@ html {
 .redes-about {
     display: flex;
     width: 100%;
-    margin-left: 20%;
     margin-top: 18%;
+    justify-content: center;
 }
 
 .redes-about i {

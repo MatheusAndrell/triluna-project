@@ -40,20 +40,22 @@
 
     <section class="catalogos" id="catalogo">
         <div class="col-6">
-            <div class="catg bord1"></div>
-            <div class="catg bord2"></div>
-            <div class="catg bord3"></div>
-            <div class="catg bord4"></div>
-            <div class="catg bord5"></div>
-            <div class="catgg bord6"></div>
+            <img class="catg bord1" src="img/produtos/produto1.jpeg" alt="">
+            <img class="catg bord2" src="img/produtos/produto2.jpeg" alt="">
+            <img class="catg bord3" src="img/produtos/produto3.jpeg" alt="">
+            <img class="catg bord4" src="img/produtos/produto4.jpeg" alt="">
+            <img class="catg bord5" src="img/produtos/produto5.jpeg" alt="">
+            <img class="catg bord6" src="img/produtos/produto6.jpeg" alt="">
         </div>
     </section>
     <section class="produtos" id="produtos">
         <div class="col-4">
-            <div class="prod"></div>
-            <div class="prod"></div>
-            <div class="prod"></div>
-            <div class="prod"></div>
+            @foreach ($categorias as $categoria)
+                <div class="prod">
+                    <p>{{ $categoria->descricao }}</p>
+                </div>
+            @endforeach
+
         </div>
     </section>
     <section class="form-pag" id="forma">

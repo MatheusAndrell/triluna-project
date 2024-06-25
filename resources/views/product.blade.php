@@ -25,46 +25,42 @@
             </ul>
         </div>
     </div>
-    <section class="product-section">
-        <div class="product-container">
-            <div class="product-image-container">
-                <div class="product-image">
-                    <div></div>
+    <form action="">
+
+        <section class="product-section">
+            <div class="product-container">
+                <div class="product-image-container">
+                        <img class="product-image" src="../../img/produtos/produto2.jpeg" alt="">
+
                 </div>
-                <div class="more-image">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </div>
-            <div class="info-container">
-                <div class="info-product">
-                    <h2>Lorem ipsum dolor sit amet.</h2>
-                    <h1>Lorem ipsum dolor sit.</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quasi nam harum laborum atque vel
-                        ad
-                        odio rem fugiat beatae!</p>
-                </div>
-                <div class="payment-product">
-                    <div class="price-and-discount">
-                        <h2>R$ 000.00</h2>
-                        <div class="desconto">
-                            <h1>00%</h1>
+                <div class="info-container">
+                    <div class="info-product">
+                        <h2>{{ $categoriaDescricao }}</h2>
+                        <h1>{{ $product->nome }}</h1>
+                        <p>{{ $product->descricao }}</p>
+                    </div>
+                    <div class="payment-product">
+                        <div class="price-and-discount">
+                            <h2>R$ {{ $product->preco }}</h2>
+                            <div class="desconto">
+                                <h1>{{ $product->desconto }}%</h1>
+                            </div>
                         </div>
+                        <p>R$ {{ $valorAntigoFormatado }}</p>
                     </div>
-                    <p>R$ 000.00</p>
-                </div>
-                <div class="button-product">
-                    <div class="button-quanty">
-                        <button class="quanty-btn decrease">-</button>
-                        <input type="text" class="quanty" value="1">
-                        <button class="quanty-btn increase">+</button>
+                    <div class="button-product">
+                        <div class="button-quanty">
+                            <button class="quanty-btn decrease">-</button>
+                            <input type="text" class="quanty" value="1">
+                            <button class="quanty-btn increase">+</button>
+                        </div>
+                        <button class="button-primary ml"><i class="fa-solid fa-cart-shopping shopp"></i>Adicionar ao
+                            Carrinho</button>
                     </div>
-                    <button class="button-primary ml"><i class="fa-solid fa-cart-shopping shopp"></i>Adicionar ao Carrinho</button>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </form>
 </body>
 
 

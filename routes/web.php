@@ -1,7 +1,8 @@
 <?php
 
+use App\Http\Controllers\IndexController;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ProdutoController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,6 +18,7 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/produto', function () {
-    return view('product');
-});
+Route::get('/', [IndexController::class, 'index']);
+
+
+Route::get('/produto/{id}', [ProdutoController::class, 'show']);
